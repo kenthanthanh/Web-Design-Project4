@@ -248,6 +248,7 @@ button {
     display: grid;
     grid-template-columns: 1fr 1fr;
     align-items: center;
+    row-gap: 146px;
     /* kết quả sẽ khác khi áp dụng display: flex; */
 }
 .about__heading {
@@ -354,4 +355,127 @@ button {
     top: 157px;
     right: -50px;
     z-index: -1;
+}
+.about__img-wrap-bottom {
+    background: linear-gradient(180deg, #c6e2fa 0%, #94c2ea 100%);
+    border-radius: 18px;
+    width: 458px;
+    height: 500px;
+    box-shadow: 0px 17px 77px -8px rgba(190, 165, 139, 0.17);
+    border: 2px solid #ffffff;
+    margin-left: 0;
+}
+.about__img-wrap-bottom::after {
+    content: none;
+}
+.about__img-bottom {
+    width: 100%;
+}
+.about__decor-img {
+    position: absolute;
+}
+.about__decor-img:nth-child(1) {
+    top: 13px;
+    right: 64px;
+}
+
+.about__decor-img:nth-child(2) {
+    top: -16px;
+    right: 13px;
+}
+
+.about__decor-img:nth-child(3) {
+    top: 33px;
+    right: -21px;
+}
+
+.about__decor-img:nth-child(4) {
+    top: 268px;
+    right: -33px;
+}
+
+.about__decor-img:nth-child(5) {
+    bottom: 150px;
+    right: 19px;
+}
+
+.about__decor-img:nth-child(6) {
+    right: -45px;
+    bottom: -55px;
+}
+
+.tab {
+    margin-top: 52px;
+}
+.tab__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.tab__list::after,
+.tab__item--active::after,
+.tab__content-more::after{
+    bottom: 0;
+    right: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    height: 2px;
+    border-radius: 1px;
+    background: #ff5b2e;
+    opacity: 0.07;
+}
+.tab__item--active::after {
+    width: 95px;
+    opacity: 1;
+}
+
+.tab__item {
+    position: relative;
+    padding-bottom: 10px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    column-gap: 10px;
+}
+.tab__icon {
+   /* display: inline-block;
+    /* width: 21px; */
+    /* width: 21px; */
+    /* object-fit: cover; */ 
+}
+.tab__title {
+    color: #48496a;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+.tab__contents {
+    padding-top: 36px;
+}
+.tab__content-item{
+    display: none;
+}
+.tab__content-item--active{
+    display: block;
+}
+.tab__content-desc{
+    width: 391px;
+    margin-top: 0;
+    font-size: 1.4rem;
+    line-height: 1.7; /* 171.429% */
+
+}
+.tab__content-more{
+    position: relative;
+    display: inline-block;
+    padding-bottom: 5px;
+    margin-top: 32px;
+    color: #FF5D31;
+font-size: 1.6rem;
+font-weight: 500;
+}
+.tab__content-more::after{
+    opacity: 1;
+    height: 1.5px;
 }
