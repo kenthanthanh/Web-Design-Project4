@@ -239,3 +239,119 @@ button {
     font-weight: 500;
     text-decoration-line: underline;
 }
+
+/* About */
+.about {
+    padding: 53px 0;
+}
+.about__inner {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    /* kết quả sẽ khác khi áp dụng display: flex; */
+}
+.about__heading {
+    width: 446px;
+}
+.about__desc {
+    width: 431px;
+}
+.about__checklist {
+    margin-top: 54px;
+    gap: 36px;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+}
+.about__check-item {
+    gap: 10px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    color: #48496a;
+    font-size: 1.8rem;
+    font-weight: 500;
+}
+.about__check-item::before {
+    content: "";
+    background: #ff5d31;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    flex-shrink: 0;
+    box-shadow: 0px 4px 15px -3px rgba(255, 93, 49, 0.69);
+    border-radius: 4px;
+}
+.about__check-item::after {
+    top: 3px;
+    left: 4px;
+    position: absolute;
+    content: url(../img/checked.svg);
+}
+.about__media {
+    position: relative;
+}
+.about__card {
+    top: 165px;
+    left: 0;
+    position: absolute;
+    padding: 30px 26px;
+    text-align: center;
+    width: 136px;
+    height: 156px;
+    flex-shrink: 0;
+    border-radius: 10px;
+    background: #5bd6e2;
+    box-shadow: -15px 26px 48px 0px rgba(85, 240, 255, 0.17);
+}
+.about__card-title {
+    padding-top: 31px;
+    color: #fff;
+    font-family: Sora;
+    font-size: 4.2rem;
+    font-weight: 700;
+}
+.about__card-desc {
+    margin-top: 14px;
+    color: #c6f4f9;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.42; /* 142.857% */
+}
+.about__card-decor {
+    position: absolute;
+    top: -39px;
+    right: -31px;
+}
+.about__img-wrap {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    position: relative;
+    width: 494px;
+    height: 559px;
+    flex-shrink: 0;
+    border-radius: 16px;
+}
+.about__img-wrap::after {
+    z-index: -1;
+    inset: auto 0 0 0;
+    position: absolute;
+    content: "";
+    height: 336px;
+    background: linear-gradient(180deg, #fce0ef 0%, #fac3d1 100%);
+    border-radius: 16px;
+}
+
+.about__img {
+    display: block;
+    width: 450px;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+.about__media-decor {
+    position: absolute;
+    top: 157px;
+    right: -50px;
+    z-index: -1;
+}
