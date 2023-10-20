@@ -579,3 +579,114 @@ button {
 .service__column:nth-of-type(2) {
     gap: 0;
 }
+/* Stuff */
+.staff {
+    padding: 130px 0;
+}
+.staff__top {
+    text-align: center;
+}
+.staff__desc {
+    margin: 0 0 15px;
+    color: #5e6085;
+    font-family: Sora;
+    font-weight: 600;
+    line-height: 1;
+}
+
+.staff__list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 35px;
+    margin-top: 45px;
+}
+
+.staff-item__img {
+    position: relative;
+    z-index: 1;
+    display: block;
+    width: 100%;
+    flex-shrink: 0;
+    border-radius: inherit;
+}
+.staff-item__img-wrap {
+    position: relative;
+    margin: 0 16px;
+    border-radius: 130px;
+}
+.staff-item__img-wrap::before {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 266px;
+    flex-shrink: 0;
+    border-radius: inherit;
+    background: linear-gradient(180deg, #90ccff 0%, #59a8eb 95.96%);
+}
+
+.staff-item__img-wrap::after {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    content: url(../img/stuff-decor.svg);
+}
+.staff-item:nth-child(2) .staff-item__img-wrap::before {
+    background: linear-gradient(180deg, #ff997e 0%, #f3752e 100%);
+}
+.staff-item:nth-child(2) .staff-item__img-wrap::after {
+    content: url(../img/stuff-decor2.svg);
+}
+
+.staff-item:nth-child(3) .staff-item__img-wrap::before {
+    background: linear-gradient(180deg, #fabf3e 0%, #ffa14a 100%);
+}
+
+.staff-item:nth-child(3) .staff-item__img-wrap::after {
+    content: url(../img/stuff-decor3.svg);
+}
+
+.staff-item:nth-child(4) .staff-item__img-wrap::before {
+    background: linear-gradient(180deg, #5bd6e2 0%, #00a7cc 100%);
+}
+
+.staff-item:nth-child(4) .staff-item__img-wrap::after {
+    content: url(../img/stuff-decor4.svg);
+}
+.staff-item:nth-child(even) .staff-item__img-wrap::after {
+    bottom: initial;
+    top: 20px;
+}
+
+.staff-item__title {
+    margin-top: 29px;
+    color: #656689;
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+.stuff-item__name {
+    margin-top: 14px;
+    color: #000958;
+    text-align: center;
+    font-family: Sora;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.staff__btn-cta {
+    text-align: center;
+    margin-top: 48px;
+}
+.staff__btn {
+    width: 193px;
+    border: 1px solid rgb(255, 91, 46, 0.6);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
