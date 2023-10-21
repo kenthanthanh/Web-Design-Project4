@@ -690,3 +690,156 @@ button {
     font-size: 1.6rem;
     font-weight: 500;
 }
+/* Pricing */
+
+.pricing {
+    padding: 86px 0;
+    background: #fff6ed;
+}
+.pricing__top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+.pricing__desc {
+    display: inline-block;
+    width: 709px;
+}
+
+.pricing__switch-wrap {
+    margin-top: 38px;
+    display: flex;
+    justify-content: center;
+}
+.pricing__switch-inner {
+    position: relative;
+    /* margin-top: 38px; */
+    display: flex;
+    align-items: center;
+    
+}
+.pricing__switch-label{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 40px;
+    width: 276px;
+    height: 56px;
+    flex-shrink: 0;
+    border-radius: 99px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    cursor: pointer;
+    user-select: none;
+}
+
+.pricing__switch-label::before {
+    top: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    width: 140px;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: inherit;
+    background: var(--primary-color);
+}
+.pricing__switch-value {
+    z-index: 1;
+position: relative;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height:1;
+}
+.pricing__switch-input:checked + .pricing__switch-label::before{
+    width:131px;
+    right: 0;
+    left:auto;
+}
+.pricing__switch-input:not(:checked) + .pricing__switch-label .pricing__switch-value:nth-of-type(2),
+.pricing__switch-input:checked + .pricing__switch-label .pricing__switch-value:nth-of-type(1){
+    color:var(--primary-color);
+}
+.pricing__sale-off{
+    position: absolute;
+    right: -112px;
+    top: -10px;
+}
+.pricing__list {
+    margin-top: 56px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 44px;
+    justify-content: space-between;
+}
+.pricing-item {
+    padding: 30px 28px 43px;
+    width: 302px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    background: #fff;
+}
+.pricing-item__type {
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+.pricing-item__heading {
+    margin-top: 8px;
+    color: #3f4065;
+    font-family: Sora;
+    font-size: 1.8rem;
+    font-weight: 600;
+    line-height: 1; /* 100% */
+}
+.pricing-item__price {
+    display: block;
+    margin-top: 24px;
+    color: #000958;
+    font-family: Sora;
+    font-size: 3.3rem;
+    font-weight: 700;
+    line-height: 1.03; /* 103.03% */
+}
+.pricing-item__btn {
+    --height: 44px;
+    width: 246px;
+    border: 1px solid rgba(255, 91, 46, 0.6);
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+    line-height: 1; /* 100% */
+    margin-top: 22px;
+}
+.pricing-item__btn:hover {
+    background: var(--primary-color);
+    color: #fff;
+}
+
+.pricing-item__list {
+    margin-top: 24px;
+}
+.pricing-item__item {
+    display: flex;
+    align-items: center;
+    color: #656689;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1; /* 100% */
+}
+.pricing-item__item::before {
+    content: url(../img/pricing-item__check.svg);
+    margin-right: 12px;
+}
+/* Có thêm class unckeck sẽ bị opacity 0.4 */
+/* Sử dụng cho các pricing-item__item chưa được tích (bị mờ đi 60%) */
+.uncheck.pricing-item__item::before {
+    opacity: 0.4;
+}
+.pricing-item__item + .pricing-item__item {
+    margin-top: 18px;
+}
