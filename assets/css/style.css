@@ -880,13 +880,24 @@ button {
     background: transparent;
     color: var(--primary-color);
 }
+.review__control:nth-last-of-type(2)
+{
+    margin-left: auto;
+}
 .review__control:hover {
     color: #fff;
     background: var(--primary-color);
     border-color: var(--primary-color);
     cursor: pointer;
 }
+
+.review__list{
+    display: flex;
+    align-items: center;
+}
 .review-item {
+    width: 100%;
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     column-gap: 115px;
@@ -916,6 +927,13 @@ button {
     flex-shrink: 0;
     object-fit: cover;
     border-radius: inherit;
+}
+.review__content {
+    overflow: hidden;
+}
+.review-item__content{
+        margin-top: 30px;
+
 }
 .review-item__quote {
     color: #000;
