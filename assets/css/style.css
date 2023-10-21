@@ -880,8 +880,7 @@ button {
     background: transparent;
     color: var(--primary-color);
 }
-.review__control:nth-last-of-type(2)
-{
+.review__control:nth-last-of-type(2) {
     margin-left: auto;
 }
 .review__control:hover {
@@ -891,7 +890,7 @@ button {
     cursor: pointer;
 }
 
-.review__list{
+.review__list {
     display: flex;
     align-items: center;
 }
@@ -931,9 +930,8 @@ button {
 .review__content {
     overflow: hidden;
 }
-.review-item__content{
-        margin-top: 30px;
-
+.review-item__content {
+    margin-top: 30px;
 }
 .review-item__quote {
     color: #000;
@@ -967,17 +965,88 @@ button {
     justify-content: center;
     gap: 8px;
 }
-.review-dot{
+.review-dot {
     height: 8px;
     width: 8px;
     border-radius: 4px;
     border: 1px solid var(--primary-color);
 }
-.review-dot:hover{
+.review-dot:hover {
     background: var(--primary-color);
     cursor: pointer;
 }
 .review-dot__active {
     width: 24px;
     background: var(--primary-color);
+}
+/* Blog */
+.blog {
+    padding: 77px 0 130px;
+}
+.blog__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.blog__desc {
+    margin-top: 0;
+    width: 350px;
+}
+.blog__cta {
+    margin-top: 24px;
+    width: 182px;
+    border: 1px solid rgb(255, 91, 46, 0.6);
+    box-shadow: 0px 13px 26px -8px rgba(255, 91, 46, 0.42);
+    color: var(--primary-color);
+    font-size: 1.6rem;
+    font-weight: 500;
+}
+.blog__list {
+    margin-top: 93px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 48px;
+}
+.blog-item__img-wrap {
+    padding: 24px 0 0 36px;
+    width: 358px;
+    height: 362px;
+    flex-shrink: 0;
+    border-radius: 24px;
+    background: #90ccff;
+}
+.blog-item:nth-of-type(2) .blog-item__img-wrap {
+    background: #ff997e;
+}
+.blog-item:nth-of-type(3) .blog-item__img-wrap {
+    background: #5bd6e2;
+}
+.date {
+    color: #fff;
+    font-family: Sora;
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.21; /* 121.429% */
+}
+
+.blog-item__img {
+    margin-top: 25px;
+    width: 100%;
+    height: 296px;
+    flex-shrink: 0;
+    object-fit: cover;
+    display: block;
+}
+.blog-item__content{
+    padding: 28px 16px 0 0;
+}
+.blog-item__heading{
+    width: 340px;
+    font-size: 2.2rem;
+    font-weight: 600;
+    line-height: 1.54; /* 154.545% */
+
+}
+.blog-item__desc{
+    margin-top: 16px;
 }
