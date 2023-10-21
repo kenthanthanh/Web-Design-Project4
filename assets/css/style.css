@@ -515,11 +515,24 @@ button {
     background: #fff;
 }
 .service-item__heading {
+    padding-left: 12px;
+    position: relative;
     color: #000958;
     font-family: Sora;
     font-size: 2.2rem;
     font-weight: 600;
     line-height: 1; /* 100% */
+}
+.service-item__heading::before{
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    content: "";
+    width: 2px;
+height: 22px;
+background: linear-gradient(90deg, #FF5B2E 0.39%, #FFA187 100.29%);
+
+
 }
 .service-item__desc {
     margin-top: 18px;
